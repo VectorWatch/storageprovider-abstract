@@ -18,7 +18,7 @@ StorageProviderAbstract.prototype.storeUserSettingsAsync = function(channelLabel
     throw new Error('Not implemented.');
 };
 
-StorageProviderAbstract.prototype.removeUserSettingAsync = function(channelLabel) {
+StorageProviderAbstract.prototype.removeUserSettingsAsync = function(channelLabel) {
     throw new Error('Not implemented.');
 };
 

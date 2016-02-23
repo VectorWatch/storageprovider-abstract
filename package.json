@@ -1,6 +1,6 @@
 {
   "name": "vectorwatch-storageprovider-abstract",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Abstract class for implementing a VectorWatch StorageProvider",
   "main": "index.js",
   "scripts": {
