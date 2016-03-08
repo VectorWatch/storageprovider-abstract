@@ -70,4 +70,40 @@ StorageProviderAbstract.prototype.getUserSettingsAsync = function(channelLabel) 
     throw new Error('Not implemented.');
 };
 
+/**
+ * Stores the settings for apps with a TTL
+ * @param userKey {String}
+ * @param userSettings {Object}
+ * @param credentialsKey {String}
+ * @param ttl {Number}
+ * @returns {Promise}
+ */
+StorageProviderAbstract.prototype.storeAppSettingsAsync = function(userKey, userSettings, credentialsKey, ttl) {
+    throw new Error('Not implemented.');
+};
+
+/**
+ * Removes all expired settings for apps
+ * @returns {Promise<{userKey: String, userSettings: Object, authTokens: Object}[]>}
+ */
+StorageProviderAbstract.prototype.removeExpiredAppSettingsAsync = function() {
+    throw new Error('Not implemented.');
+};
+
+/**
+ * Returns a promise of settings for apps
+ * @param userKey {String}
+ * @returns {Promise<{userKey: String, userSettings: Object, authTokens: Object}>}
+ */
+StorageProviderAbstract.prototype.getAppSettingsAsync = function(userKey) {
+    throw new Error('Not implemented.');
+};
+
+/** Returns a promise of settings for apps
+ * @returns {Promise<{userKey: String, userSettings: Object, authTokens: Object}[]>}
+ */
+StorageProviderAbstract.prototype.getAllAppSettingsAsync = function() {
+    throw new Error('Not implemented.');
+};
+
 module.exports = StorageProviderAbstract;
